@@ -64,6 +64,7 @@
             this.btnRegister.TabIndex = 2;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // btnFind
             // 
@@ -75,6 +76,7 @@
             this.btnFind.TabIndex = 3;
             this.btnFind.Text = "Find";
             this.btnFind.UseVisualStyleBackColor = false;
+            this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
             // 
             // btnUpload
             // 
@@ -101,6 +103,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmStudentRecord";
             this.Text = "FrmStudentRecord";
+            this.Load += new System.EventHandler(this.FrmStudentRecord_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

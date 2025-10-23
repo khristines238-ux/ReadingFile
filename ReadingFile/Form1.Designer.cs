@@ -70,6 +70,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Next";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmOpenTextFile
             // 
@@ -82,6 +83,7 @@
             this.Controls.Add(this.lvShowText);
             this.Name = "FrmOpenTextFile";
             this.Text = "FrmOpenTextFile";
+            this.Load += new System.EventHandler(this.FrmOpenTextFile_Load);
             this.ResumeLayout(false);
 
         }

@@ -54,7 +54,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+           // this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(199, 37);
@@ -206,6 +206,11 @@
             // cbbProgram
             // 
             this.cbbProgram.FormattingEnabled = true;
+            this.cbbProgram.Items.AddRange(new object[] {
+            "BS in Information Technology",
+            "BS in Tourism Management",
+            "BS in Business Accountancy",
+            "BS in Hospital Management"});
             this.cbbProgram.Location = new System.Drawing.Point(357, 74);
             this.cbbProgram.Name = "cbbProgram";
             this.cbbProgram.Size = new System.Drawing.Size(192, 21);
@@ -228,6 +233,9 @@
             // cbbGender
             // 
             this.cbbGender.FormattingEnabled = true;
+            this.cbbGender.Items.AddRange(new object[] {
+            "Male ",
+            "Female"});
             this.cbbGender.Location = new System.Drawing.Point(357, 169);
             this.cbbGender.Name = "cbbGender";
             this.cbbGender.Size = new System.Drawing.Size(78, 21);
@@ -269,6 +277,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmRegistration";
             this.Text = "FrmRegistration";
+            this.Load += new System.EventHandler(this.FrmRegistration_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

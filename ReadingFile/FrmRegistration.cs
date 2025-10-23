@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace ReadingFile
 {
@@ -22,7 +23,6 @@ namespace ReadingFile
         {
             string path = @"C:\Student Records\studentlist.txt";
             Directory.CreateDirectory(@"C:\StudentRecords");
-
             using (StreamWriter sw = new StreamWriter(path, true))
             {
                 sw.WriteLine($"{txtbStudentNo.Text}, {txtbLastName.Text}, {txtbFirstName.Text},{txtbMI.Text},{cbbProgram.Text},{txtbAge.Text},{cbbGender.Text},{dateTimePicker1.Text},{txtbContactNo.Text}");
@@ -47,6 +47,12 @@ namespace ReadingFile
         {
             FrmStudentRecord record = new FrmStudentRecord();
             record.ShowDialog();
+            this.Hide();
+        }
+
+        private void FrmRegistration_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
