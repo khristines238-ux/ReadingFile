@@ -86,6 +86,7 @@
             this.btnUpload.TabIndex = 4;
             this.btnUpload.Text = "Upload";
             this.btnUpload.UseVisualStyleBackColor = false;
+            this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
             // 
             // FrmStudentRecord
             // 

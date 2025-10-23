@@ -16,5 +16,11 @@ namespace ReadingFile
         {
             InitializeComponent();
         }
+
+        private void btnUpload_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Successfully Upload!");
+            listView1.Clear();
+        }
     }
 }

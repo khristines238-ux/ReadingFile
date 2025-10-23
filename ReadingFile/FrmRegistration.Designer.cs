@@ -161,6 +161,7 @@
             this.btnRegister.TabIndex = 10;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // btnRecord
             // 
@@ -172,6 +173,7 @@
             this.btnRecord.TabIndex = 11;
             this.btnRecord.Text = "Records";
             this.btnRecord.UseVisualStyleBackColor = false;
+            this.btnRecord.Click += new System.EventHandler(this.btnRecord_Click);
             // 
             // txtbStudentNo
             // 
